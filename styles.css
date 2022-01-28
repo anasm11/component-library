@@ -1,5 +1,7 @@
 @import './alert/alert.css';
 @import './avatar/avatar.css';
+@import './button/button.css';
+@import './badges/badges.css';
 
 @media (min-width: 600px) {
     body{
@@ -11,4 +13,15 @@ body{
     display:flex;
     justify-content:center;
     margin:auto;
+}
+
+section{
+    padding-top:2rem;
+}
+
+.examples{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
