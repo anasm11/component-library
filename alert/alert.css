@@ -5,6 +5,7 @@
     --warn-bkg-clr:rgb(255, 255, 150);
 }
 
+/* general alert */
 .alert {
     padding: 0.5rem;
     margin:0.2rem;
@@ -14,6 +15,7 @@
     max-width: fit-content;
 }
 
+/* special cases of alert */
 .alert-error {
     background-color: var(--err-bkg-clr);
 }
