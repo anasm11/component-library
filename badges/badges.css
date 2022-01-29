@@ -1,5 +1,5 @@
 :root {
-    --online-clr: darkgreen;
+    --online-color: darkgreen;
 }
 
 img {
@@ -24,7 +24,7 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: var(--online-clr);
+    background-color: var(--online-color);
     color: white;
     border: 0.1rem solid;
 }

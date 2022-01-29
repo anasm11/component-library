@@ -1,8 +1,11 @@
 :root{
-    --bkg-clr:linear-gradient(45deg,aqua  0%, rgba(182, 241, 252, 1) 50%, rgba(252, 174, 241, 1) 70%);
-    --sec-text-clr:gray;
-    --pri-text-clr:black;
-    --danger-clr:red;
+    --primary-color:darkblue;
+    --secondary-color:lightblue;
+    /* --bkg-clr:linear-gradient(45deg,aqua  0%, rgba(182, 241, 252, 1) 50%, rgba(252, 174, 241, 1) 70%); */
+    --secondary-text-color:gray;
+    --hover-colour:lightgray;
+    --primary-text-color:black;
+    --danger-color:red;
 }
 
 img {
@@ -10,13 +13,10 @@ img {
     block-size: auto;
     border-radius: 1rem 1rem 0rem 0rem;
   }
-  
-  img:hover {
-    cursor: pointer;
-  }
+
   
   .card {
-    background: var(--bkg-clr);
+    background-color:var(--secondary-color);
     display: flex;
     flex-wrap: wrap;
     max-width: 350px;
@@ -29,25 +29,26 @@ img {
     box-shadow: 2px 2px 2px 2px;
   }
   
-  .text {
-    padding: 1.25rem 1rem 1rem 1rem;
+  .text-container {
+    padding: 1rem 1rem 0.2rem 1rem;
     flex: 1 1 100%;
-    color: var(--sec-text-clr);
+    color: var(--secondary-text-color);
   }
   
   .description {
-    padding: 0.35rem 1rem 0.35rem 1rem;
+      margin:0.5rem 0rem 0.5rem 0;
+    padding: 0rem 1rem 0rem 1rem;
     flex: 1 1 100%;
-    color: var(--sec-text-clr);
+    color: var(--secondary-text-color);
   }
   
-  .titleText {
+  .title-text {
     font-size: 1.25rem;
-    color: var(--pri-text-clr);
+    color: var(--primary-text-color);
     font-weight: bolder;
   }
   
-  .authorText {
+  .author-text {
     font-weight: bold;
     padding: 0.25rem 0rem 0rem 0rem;
   }
@@ -66,13 +67,13 @@ img {
   }
   
   .card-body:hover{
-    background-color: lightgray;
+    background-color: var(--hover-colour);
     cursor: pointer;
     border-radius: 1rem 1rem 0rem 0rem;
   }
 
  .foot>.material-icons:hover {
-    background-color: lightgray;
+    background-color: var(--hover-colour);
     cursor: pointer;
   }
   
@@ -81,7 +82,7 @@ img {
     position: relative;
   }
   
-  .basic-textovermedia-2 > .card-body > .figure > .text {
+  .basic-textovermedia-2 > .card-body > .figure > .text-container {
     z-index: 1;
     bottom: 0;
     position: absolute;
@@ -100,22 +101,23 @@ img {
     display: none;
   }
   
-  .horizontal-6 > .card-body > .img-text > img {
+  .horizontal > .card-body > .img-text > img {
     width: 100px;
     height: 90px;
     flex: 0 1 auto;
     border-top-right-radius: 0;
   }
   
-  .horizontal-6 > .card-body > .img-text {
+  .horizontal > .card-body > .img-text {
     display: flex;
   }
   
-  .horizontal-6 > .description {
+  .horizontal > .description {
     display: none;
   }
   
  .card .badge {
+     background-color:var(--primary-color);
     position: absolute;
     font-size: 0.75rem;
     display: flex;
@@ -125,8 +127,7 @@ img {
     align-items: center;
     border-radius: 0.5rem;
     padding: 0.3rem;
-    background:var(--bkg-clr);
-    color: black;
+    color: white;
   }
   
   .figure-with-badge {
@@ -143,11 +144,11 @@ img {
     align-items: center;
     border-radius: 50%;
     color: black;
-    background: var(--bkg-clr);
+    background-color:var(--secondary-color);
   }
   
   .close-btn:hover {
-    background: var(--danger-clr);
+    background: var(--danger-color);
   }
   
   .figure-with-dismiss {
