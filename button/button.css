@@ -1,0 +1,62 @@
+:root {
+  --pri-clr: linear-gradient(to bottom right, blue, red);
+  --sec-clr: linear-gradient(45deg, rgba(182, 241, 252, 1) 20%, rgba(255, 255, 255, 1) 50%, rgba(252, 174, 241, 1) 90%);
+}
+
+/* general for button */
+
+.btn {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* special cases for buttons */
+.primary-btn {
+  background: var(--pri-clr);
+  color: white;
+}
+
+.primary-btn:hover {
+  cursor: pointer;
+}
+
+.secondary-btn {
+  border: 0.1rem solid;
+}
+
+.secondary-btn:hover {
+  background: var(--pri-clr);
+  color: white;
+  cursor: pointer;
+}
+
+.icon-btn {
+  background: var(--pri-clr);
+  color: white;
+}
+
+.icon-btn:hover {
+  cursor: pointer;
+}
+
+.link:hover {
+  background: var(--sec-clr);
+}
+
+.floating-btn {
+  background: var(--pri-clr);
+  color: white;
+  height: 2rem;
+  width: 2rem;
+  align-items: center;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.floating-btn:hover {
+  cursor: pointer;
+}

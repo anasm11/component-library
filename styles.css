@@ -1,9 +1,12 @@
 @import './alert/alert.css';
 @import './avatar/avatar.css';
+@import './button/button.css';
+@import './badges/badges.css';
+@import './cards/cards.css';
 
-@media (min-width: 600px) {
+@media (min-width: 750px) {
     body{
-    max-width:600px;
+    max-width:750px;
     }
 }
 
@@ -11,4 +14,16 @@ body{
     display:flex;
     justify-content:center;
     margin:auto;
+}
+
+section{
+    padding-top:2rem;
+}
+
+.examples{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    gap:1rem;
 }

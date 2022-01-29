@@ -1,27 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-    <div class='container'>
-        <h2>Avatar</h2>
-        <p>There are 4 sizes in avatar. avatar-lg, avatar-md, avatar-sm and avatar-xs for large, medium, small and extra small avatars respectively.</p>
-        <img class="avatar avatar-lg" src="https://picsum.photos/200/200" />
-        <img class="avatar avatar-md" src="https://picsum.photos/200/200" />
-        <img class="avatar avatar-sm" src="https://picsum.photos/200/200" />
-        <img class="avatar avatar-xs" src="https://picsum.photos/200/200" />
 
-        <h2>Alert</h2>
-        <p>There are 4 types of alerts. alert-error, alert-warning, alert-success and alert-info for error, warning, success and info.</p>
-        <div class="alert alert-info">This is alert for info.</div>
-        <div class="alert alert-success">This is alert for success.</div>
-        <div class="alert alert-error">This is alert for an error.</div>
-        <div class="alert alert-warning">This is alert for a warning.</div>
-    </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Component Library</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+  <div class='container'>
+
+    <section>
+      <h2>Avatar</h2>
+      <p>There are 4 sizes in avatar. avatar-lg, avatar-md, avatar-sm and avatar-xs for large, medium, small and extra
+        small avatars respectively.</p>
+      <img class="avatar avatar-lg" src="https://picsum.photos/200/200" />
+      <img class="avatar avatar-md" src="https://picsum.photos/200/200" />
+      <img class="avatar avatar-sm" src="https://picsum.photos/200/200" />
+      <img class="avatar avatar-xs" src="https://picsum.photos/200/200" />
+    </section>
+
+    <section>
+      <h2>Alert</h2>
+      <p>There are 4 types of alerts. alert-error, alert-warning, alert-success and alert-info for error, warning, success
+        and info.</p>
+      <div class="alert alert-info">This is alert for info.</div>
+      <div class="alert alert-success">This is alert for success.</div>
+      <div class="alert alert-error">This is alert for an error.</div>
+      <div class="alert alert-warning">This is alert for a warning.</div>
+
+    </section>
+
+    <section>
+      <h2>Buttons</h2>
+      <p>There are 5 types of buttons. primary-btn, secondary-btn,icon-btn, link and floating-btn for primary,
+        secondary, with icon, link and floating buttons respectively.</p>
+      <div class='examples'>
+        <div>Primary button
+          <button class="btn primary-btn">click me</button>
+        </div>
+        <div>Secondary button
+          <button class="btn secondary-btn">click me</button>
+        </div>
+        <div>Button with an icon
+          <button class="btn icon-btn">
+            <span class="material-icons">home</span>
+            click me
+          </button>
+        </div>
+        <div>Link button
+          <a href="https://gooogle.com" class="link">link</a>
+        </div>
+        <div> Floating button
+          <button class="floating-btn">+</button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Badges</h2>
+      <p>There are 4 types of badges for avatar and 1 for icons.
+        badge-lg, badge-md, badge-sm and badge-xs for large, medium, small and extra small badges respectively.</p>
+        <div class='examples'>
+        <div class="icon-with-badge">
+          <span class='material-icons'>home</span>
+          <div class="badge icon-badge">4</div>
+        </div>
+        <div class="avatar-with-badge">
+          <img class="avatar avatar-xs" src="https://picsum.photos/200/200" />
+          <div class="badge av-badge-xs"></div>
+        </div>
+        <div class="avatar-with-badge">
+          <img class="avatar avatar-sm" src="https://picsum.photos/200/200" />
+          <div class="badge av-badge-sm"></div>
+        </div>
+        <div class="avatar-with-badge">
+          <img class="avatar avatar-md" src="https://picsum.photos/200/200" />
+          <div class="badge av-badge-md"></div>
+        </div>
+        <div class="avatar-with-badge">
+          <img class="avatar avatar-lg" src="https://picsum.photos/200/200" />
+          <div class="badge av-badge-lg"></div>
+        </div>
+
+
+
+
+      </div>
+    </section>
+
+
+    <section>
+      <h2>Cards</h2>
+      <div class='examples'>
+        <div class="card text-only-card">
+          <div class="card-body">
+            <div class="text">
+              <div class="titleText">Our Changing Planet</div>
+              <div class="authorText">by Kurt Wagner</div>
+            </div>
+            <div class="description">
+              Visit ten places on our planet that are undergoing the biggest changes
+              today Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci quisquam suscipit magni dicta, repellat, quod illo harum
+              libero esse quidem veniam dolor dolores! Optio rerum atque maxime vero
+              at voluptatibus!
+            </div>
+          </div>
+    
+          <div class="foot">
+            <button class='btn secondary-btn'>READ</button>
+            <button class='btn secondary-btn'>BOOKMARK</button>
+            <span class="material-icons">favorite</span>
+            <span class="material-icons">share</span>
+            <span class="material-icons">more_vert</span>
+          </div>
+        </div>
+    
+        <div class="card card-with-dismiss">
+          <div class="card-body">
+            <div class="figure-with-dismiss">
+              <img src="https://picsum.photos/400/300" />
+    
+              <div class="close-btn">
+                <span class="material-icons">close</span>
+              </div>
+            </div>
+            <div class="text">
+              <div class="titleText">Our Changing Planet</div>
+              <div class="authorText">by Kurt Wagner</div>
+            </div>
+            <div class="description">
+              Visit ten places on our planet that are undergoing the biggest changes
+              today
+            </div>
+          </div>
+    
+          <div class="foot">
+            <button class='btn secondary-btn'>READ</button>
+            <button class='btn secondary-btn'>BOOKMARK</button>
+            <span class="material-icons">favorite</span>
+            <span class="material-icons">share</span>
+            <span class="material-icons">more_vert</span>
+          </div>
+        </div>
+    
+        <div class="card card-with-badge">
+          <div class="card-body">
+            <div class="figure-with-badge">
+              <img src="https://picsum.photos/400/300" />
+    
+              <div class="badge">
+                #1 bestseller
+              </div>
+            </div>
+            <div class="text">
+              <div class="titleText">Our Changing Planet</div>
+              <div class="authorText">by Kurt Wagner</div>
+            </div>
+            <div class="description">
+              Visit ten places on our planet that are undergoing the biggest changes
+              today
+            </div>
+          </div>
+    
+          <div class="foot">
+            <button class='btn secondary-btn'>READ</button>
+            <button class='btn secondary-btn'>BOOKMARK</button>
+            <span class="material-icons">favorite</span>
+            <span class="material-icons">share</span>
+            <span class="material-icons">more_vert</span>
+          </div>
+        </div>
+    
+        <div class="card basic-1">
+          <div class="card-body">
+            <img src="https://picsum.photos/400/300" />
+    
+            <div class="text">
+              <div class="titleText">Our Changing Planet</div>
+              <div class="authorText">by Kurt Wagner</div>
+            </div>
+            <div class="description">
+              Visit ten places on our planet that are undergoing the biggest changes
+              today
+            </div>
+          </div>
+    
+          <div class="foot">
+            <button class='btn secondary-btn'>READ</button>
+            <button class='btn secondary-btn'>BOOKMARK</button>
+            <span class="material-icons">favorite</span>
+            <span class="material-icons">share</span>
+            <span class="material-icons">more_vert</span>
+          </div>
+        </div>
+    
+        <div class="card basic-textovermedia-2">
+          <div class="card-body">
+            <div class="figure">
+              <img src="https://picsum.photos/400/300" />
+              <div class="text">
+                <div class="titleText">Our Changing Planet</div>
+                <div class="authorText">by Kurt Wagner</div>
+              </div>
+            </div>
+            <div class="description">
+              Visit ten places on our planet that are undergoing the biggest changes
+              today
+            </div>
+          </div>
+    
+          <div class="foot">
+            <button class='btn secondary-btn'>READ</button>
+            <button class='btn secondary-btn'>BOOKMARK</button>
+            <span class="material-icons">favorite</span>
+            <span class="material-icons">share</span>
+            <span class="material-icons">more_vert</span>
+          </div>
+        </div>
+        
+        <div>
+          card basic-with-header
+          <div class="card basic-with-header">
+            <div class="text">
+              <div class="titleText">Our Changing Planet</div>
+              <div class="authorText">by Kurt Wagner</div>
+            </div>
+      
+            <div class="card-body">
+              <img src="https://picsum.photos/400/300" />
+      
+              <div class="description">
+                Visit ten places on our planet that are undergoing the biggest changes
+                today
+              </div>
+            </div>
+      
+            <div class="foot">
+              <button class='btn secondary-btn'>READ</button>
+              <button class='btn secondary-btn'>BOOKMARK</button>
+              <span class="material-icons">favorite</span>
+              <span class="material-icons">share</span>
+              <span class="material-icons">more_vert</span>
+            </div>
+          </div>
+        </div>
+        
+        <div>
+            card basic-only-buttons
+          <div class="card basic-only-buttons">
+            <div class="card-body">
+              <img src="https://picsum.photos/400/300" />
+      
+              <div class="text">
+                <div class="titleText">Our Changing Planet</div>
+                <div class="authorText">by Kurt Wagner</div>
+              </div>
+              <div class="description">
+                Visit ten places on our planet that are undergoing the biggest changes
+                today
+              </div>
+            </div>
+      
+            <div class="foot">
+              <button class='btn secondary-btn'>READ</button>
+              <button class='btn secondary-btn'>BOOKMARK</button>
+              <span class="material-icons">favorite</span>
+              <span class="material-icons">share</span>
+              <span class="material-icons">more_vert</span>
+            </div>
+          </div>
+        </div>
+    
+        <div class="card basic-only-icons">
+          <div class="card-body">
+            <img src="https://picsum.photos/400/300" />
+    
+            <div class="text">
+              <div class="titleText">Our Changing Planet</div>
+              <div class="authorText">by Kurt Wagner</div>
+            </div>
+            <div class="description">
+              Visit ten places on our planet that are undergoing the biggest changes
+              today
+            </div>
+          </div>
+    
+          <div class="foot">
+            <button class='btn secondary-btn'>READ</button>
+            <button class='btn secondary-btn'>BOOKMARK</button>
+            <span class="material-icons">favorite</span>
+            <span class="material-icons">share</span>
+            <span class="material-icons">more_vert</span>
+          </div>
+        </div>
+    
+        <div class="card horizontal-6">
+          <div class="card-body">
+            <div class="img-text">
+              <img src="https://picsum.photos/400/300" />
+    
+              <div class="text">
+                <div class="titleText">Our Changing Planet</div>
+                <div class="authorText">by Kurt Wagner</div>
+              </div>
+            </div>
+            <div class="description">
+              Visit ten places on our planet that are undergoing the biggest changes
+              today
+            </div>
+          </div>
+    
+          <div class="foot">
+            <button class='btn secondary-btn'>READ</button>
+            <button class='btn secondary-btn'>BOOKMARK</button>
+            <span class="material-icons">favorite</span>
+            <span class="material-icons">share</span>
+            <span class="material-icons">more_vert</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
 </body>
+
 </html>
