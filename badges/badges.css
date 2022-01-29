@@ -1,0 +1,81 @@
+:root {
+    --online-clr: darkgreen;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+
+    aspect-ratio: 2/1;
+    object-fit: cover;
+    object-position: top-center;
+}
+
+/* parent container of avatar and badge */
+.avatar-with-badge {
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+
+.badge {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--online-clr);
+    color: white;
+    border: 0.1rem solid;
+}
+
+.av-badge-lg {
+    bottom: 0.1rem;
+    right: 0.1rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.3rem;
+}
+
+.av-badge-md {
+    bottom: 0.1rem;
+    right: 0.1rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-size: 1rem;
+}
+
+.av-badge-sm {
+    bottom: 0rem;
+    right: 0rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    font-size: 0.5rem;
+}
+
+.av-badge-xs {
+    bottom: 0rem;
+    right: 0rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    font-size: 0.3rem;
+}
+
+/* parent container of icon and badge */
+.icon-with-badge {
+    position: relative;
+    display: flex;
+    width: fit-content;
+}
+
+/* badge icon */
+.icon-badge {
+    top: 0rem;
+    right: 0rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: none;
+    font-size: 0.75rem;
+    color: black;
+    background-color: red;
+}
