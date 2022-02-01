@@ -2,15 +2,6 @@
     --online-color: darkgreen;
 }
 
-img {
-    max-inline-size: 100%;
-    block-size: auto;
-
-    aspect-ratio: 2/1;
-    object-fit: cover;
-    object-position: top-center;
-}
-
 /* parent container of avatar and badge */
 .avatar-with-badge {
     position: relative;
