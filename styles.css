@@ -15,10 +15,6 @@
 img {
     max-inline-size: 100%;
     block-size: auto;
-
-    aspect-ratio: 2/1;
-    object-fit: cover;
-    object-position: top-center;
 }
 
 body{
@@ -29,6 +25,8 @@ body{
 
 aside{
     padding:4rem;
+    position:fixed;
+    margin-left: auto;
 }
 
 aside>*{

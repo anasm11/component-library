@@ -1,5 +1,5 @@
 :root{
-    --err-bkg-clr:rgb(255, 150, 150);
+    --error-bkg-clr:rgb(255, 150, 150);
     --success-bkg-clr:rgb(150, 255, 150);
     --info-bkg-clr:rgb(150, 255, 255);
     --warn-bkg-clr:rgb(255, 255, 150);
@@ -10,16 +10,16 @@
     border: 0.1rem solid;
     padding: 0.5rem;
     display:flex;
-    flex:1 1 fit-content;
+    flex:1 1 100%;
   }
   
   .input:focus{
     outline:none;
-    box-shadow:0rem 0rem 0.2rem 0.2rem;
+    box-shadow:0rem 0rem 0.2rem 0.02rem;
   }
 
   .input-error {
-    border: 0.1rem solid var(--err-bkg-clr);
+    border: 0.1rem solid var(--error-bkg-clr);
   }
 
   .input-warning {
@@ -32,17 +32,17 @@
 
   .input-error:focus{
     outline:none;
-    box-shadow:0rem 0rem 0.2rem 0.2rem var(--err-bkg-clr);
+    box-shadow:0rem 0rem 0.2rem 0.1rem var(--err-bkg-clr);
   }
 
   .input-warning:focus{
     outline:none;
-    box-shadow:0rem 0rem 0.2rem 0.2rem var(--warn-bkg-clr);
+    box-shadow:0rem 0rem 0.2rem 0.1rem var(--warn-bkg-clr);
   }
 
   .input-success:focus{
     outline:none;
-    box-shadow:0rem 0rem 0.01rem 0.01rem var(--success-bkg-clr);
+    box-shadow:0rem 0rem 0.2rem 0.1rem var(--success-bkg-clr);
   }
 
   .input-container>p{
@@ -50,4 +50,7 @@
     margin:0;
     margin-left:0.75rem;
   }
-  
+
+  .input-container>*{
+    display:flex;
+  }
