@@ -1,0 +1,17 @@
+:root {
+  --primary-color:darkblue;
+}
+
+.img-responsive{
+  max-inline-size: 100%;
+  block-size: auto;
+  
+}
+  .round-img {
+    width:100%;
+    object-fit: contain;
+    border-radius:50%;
+    aspect-ratio: 1/1;
+    background-color:var(--primary-color);
+  }
+  

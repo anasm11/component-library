@@ -8,7 +8,7 @@
     --danger-color:red;
 }
 
-img {
+.card img {
     max-inline-size: 100%;
     block-size: auto;
     border-radius: 1rem 1rem 0rem 0rem;
@@ -143,7 +143,7 @@ img {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    color: black;
+    color: var(--primary-text-color);
     background-color:var(--secondary-color);
   }
   
