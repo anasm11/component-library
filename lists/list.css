@@ -4,9 +4,19 @@
   flex-direction: column;
 }
 
+ul{
+  margin:0;
+}
+
 .no-bullet-list > ul {
   list-style-type: none;
   margin: 0;
+} 
+
+.inline-list>ul{
+  display:flex; 
+  flex-wrap:wrap;
+  gap:0.5rem 2.5rem;
 }
 
 .list-header {
