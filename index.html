@@ -1,373 +1,736 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Library</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./prism.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Component Library</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./styles.css" />
-</head>
+  <body>
+    <header class="nav">
+      <h1>lucid UI</h1>
+      <ul class="nav-links-container">
+        <li class="link">Home</li>
+        <li class="link">Documentation</li>
+      </ul>
+    </header>
 
-<body>
+    <section class="content-container">
+      <aside class="sidebar">
+        <a class="link" href="#avatar">Avatar</a>
+        <a class="link" href="#alert">Alert</a>
+        <a class="link" href="#buttons">Buttons</a>
+        <a class="link" href="#badges">Badges</a>
+        <a class="link" href="#cards">Cards</a>
+        <a class="link" href="#images">Images</a>
+        <a class="link" href="#input">Input</a>
+      </aside>
 
-  <aside>
-    <a class='link' href='#avatar'>Avatar</a>
-    <a class='link' href='#alert'>Alert</a>
-    <a class='link' href='#buttons'>Buttons</a>
-    <a class='link' href='#badges'>Badges</a>
-    <a class='link' href='#cards'>Cards</a>
-    <a class='link' href='#images'>Images</a>
-    <a class='link' href='#input'>Input</a>
-  </aside>
+      <main>
+        <section id="avatar">
+          <h2>Avatar</h2>
+          <pre>
+          <code class="language-html">
+              @import url("https://lucidui.netlify.app/avatar/avatar.css");
+              &lt;link rel="stylesheet"
+              href="https://lucidui.netlify.app/avatar/avatar.css">
+          </code>
+        </pre>
 
-  <main>
-    <section id='avatar'>
-      <h2>Avatar</h2>
-      <p>There are 4 sizes in avatar. avatar-lg, avatar-md, avatar-sm and avatar-xs for large, medium, small and extra
-        small avatars respectively.</p>
-      <div class='examples'>
-        <img class="avatar avatar-lg" src="https://picsum.photos/200/200" />
-        <img class="avatar avatar-md" src="https://picsum.photos/200/200" />
-        <img class="avatar avatar-sm" src="https://picsum.photos/200/200" />
-        <img class="avatar avatar-xs" src="https://picsum.photos/200/200" />
-      </div>
-    </section>
+          <div class="examples">
+            <img class="avatar avatar-lg" src="https://picsum.photos/200/200" />
+            <img class="avatar avatar-md" src="https://picsum.photos/200/200" />
+            <img class="avatar avatar-sm" src="https://picsum.photos/200/200" />
+            <img class="avatar avatar-xs" src="https://picsum.photos/200/200" />
+          </div>
+          <p>
+            There are 4 sizes in avatar. avatar-lg, avatar-md, avatar-sm and
+            avatar-xs for large, medium, small and extra small avatars
+            respectively.
+          </p>
 
-    <section id='alert'>
-      <h2>Alert</h2>
-      <p>There are 4 types of alerts. alert-error, alert-warning, alert-success and alert-info for error, warning, success
-        and info.</p>
-      <div class='examples'>
-        <div class="alert alert-info">This is alert for info.</div>
-        <div class="alert alert-success">This is alert for success.</div>
-        <div class="alert alert-error">This is alert for an error.</div>
-        <div class="alert alert-warning">This is alert for a warning.</div>
-      </div>
-    </section>
+          <script type="text/plain" class="language-markup">
+            <img class="avatar avatar-lg" src="..." />
 
-    <section id='buttons'>
-      <h2>Buttons</h2>
-      <p>There are 5 types of buttons. primary-btn, secondary-btn,icon-btn, link and floating-btn for primary,
-        secondary, with icon, link and floating buttons respectively.</p>
-      <div class='examples'>
-        <div>Primary button
-          <button class="btn primary-btn">click me</button>
-        </div>
-        <div>Secondary button
-          <button class="btn secondary-btn">click me</button>
-        </div>
-        <div>Button with an icon
-          <button class="btn icon-btn">
-            <span class="material-icons">home</span>
-            click me
-          </button>
-        </div>
-        <div>Link button
-          <a href="https://gooogle.com" class="link">link</a>
-        </div>
-        <div> Floating button: on the bottom right fixed on screen
-          <button class="floating-btn">+</button>
-        </div>
-      </div>
-    </section>
+            <img class="avatar avatar-sm" src="..." />
+          </script>
+        </section>
 
-    <section id='badges'>
-      <h2>Badges</h2>
-      <p>There are 4 types of badges for avatar and 1 for icons.
-        badge-lg, badge-md, badge-sm and badge-xs for large, medium, small and extra small badges respectively.</p>
-        <div class='examples'>
-        <div class="icon-with-badge">
-          <span class='material-icons'>home</span>
-          <div class="badge icon-badge">4</div>
-        </div>
-        <div class="avatar-with-badge">
-          <img class="avatar avatar-xs" src="https://picsum.photos/200/200" />
-          <div class="badge av-badge-xs"></div>
-        </div>
-        <div class="avatar-with-badge">
-          <img class="avatar avatar-sm" src="https://picsum.photos/200/200" />
-          <div class="badge av-badge-sm"></div>
-        </div>
-        <div class="avatar-with-badge">
-          <img class="avatar avatar-md" src="https://picsum.photos/200/200" />
-          <div class="badge av-badge-md"></div>
-        </div>
-        <div class="avatar-with-badge">
-          <img class="avatar avatar-lg" src="https://picsum.photos/200/200" />
-          <div class="badge av-badge-lg"></div>
-        </div>
+        <section id="alert">
+          <h2>Alert</h2>
+          <pre>
+          <code class="language-html">
+              @import url("https://lucidui.netlify.app/alert/alert.css");
+              &lt;link rel="stylesheet"
+              href="https://lucidui.netlify.app/alert/alert.css">
+          </code>
+        </pre>
+          <div class="examples">
+            <div class="alert alert-info">This is alert for info.</div>
+            <div class="alert alert-success">This is alert for success.</div>
+            <div class="alert alert-error">This is alert for an error.</div>
+            <div class="alert alert-warning">This is alert for a warning.</div>
+          </div>
+          <p>
+            There are 4 types of alerts. alert-error, alert-warning,
+            alert-success and alert-info for error, warning, success and info.
+          </p>
 
-      </div>
-    </section>
+          <script type="text/plain" class="language-markup">
+            <div class="alert alert-info">This is alert for info.</div>
 
-    <section id='cards'>
-      <h2>Cards</h2>
-      <div class='examples'>
-        <div class="card text-only-card">
-          <div class="card-body">
-            <div class="text-container">
-              <div class="title-text">Our Changing Planet</div>
-              <div class="author-text">by Kurt Wagner</div>
+            <div class="alert alert-success">This is alert for success.</div>
+          </script>
+        </section>
+
+        <section id="buttons">
+          <h2>Buttons</h2>
+          <pre>
+          <code class="language-html">
+              @import url("https://lucidui.netlify.app/button/button.css");
+              &lt;link rel="stylesheet"
+              href="https://lucidui.netlify.app/button/button.css">
+          </code>
+        </pre>
+
+          <p>
+            There are 5 types of buttons. primary-btn, secondary-btn,icon-btn,
+            link and floating-btn for primary, secondary, with icon, link and
+            floating buttons respectively.
+          </p>
+          <div class="examples">
+            <div>
+              Primary button
+              <button class="btn primary-btn">click me</button>
             </div>
-            <p class="description">
-              Visit ten places on our planet that are undergoing the biggest changes
-              today Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Adipisci quisquam suscipit magni dicta, repellat, quod illo harum
-              libero esse quidem veniam dolor dolores! Optio rerum atque maxime vero
-              at voluptatibus!
-            </p>
+            <div>
+              Secondary button
+              <button class="btn secondary-btn">click me</button>
+            </div>
+            <div>
+              Button with an icon
+              <button class="btn icon-btn">
+                <span class="material-icons">home</span>
+                click me
+              </button>
+            </div>
+            <div>
+              Link button
+              <a href="https://gooogle.com" class="link">link</a>
+            </div>
+            <div>
+              Floating button: on the bottom right fixed on screen
+              <button class="floating-btn">+</button>
+            </div>
           </div>
-    
-          <div class="foot">
-            <button class='btn secondary-btn'>READ</button>
-            <button class='btn secondary-btn'>BOOKMARK</button>
-            <span class="material-icons">favorite</span>
-            <span class="material-icons">share</span>
-            <span class="material-icons">more_vert</span>
+
+          <script type="text/plain" class="language-markup">
+            <div>Primary button
+              <button class="btn primary-btn">click me</button>
+            </div>
+
+            <div>Button with an icon
+              <button class="btn icon-btn">
+                <span class="material-icons">home</span>
+                click me
+              </button>
+            </div>
+
+            <div>Link button
+              <a href="https://gooogle.com" class="link">link</a>
+            </div>
+
+            <div> Floating button: on the bottom right fixed on screen
+              <button class="floating-btn">+</button>
+            </div>
+          </script>
+        </section>
+
+        <section id="badges">
+          <h2>Badges</h2>
+
+          <pre>
+          <code class="language-html">
+              @import url("https://lucidui.netlify.app/badges/badges.css");
+              &lt;link rel="stylesheet"
+              href="https://lucidui.netlify.app/badges/badges.css">
+          </code>
+        </pre>
+
+          <script type="text/plain" class="language-markup">
+            <div class="icon-with-badge">
+              <span class='material-icons'>home</span>
+              <div class="badge icon-badge">4</div>
+            </div>
+
+            <div class="avatar-with-badge">
+              <img class="avatar avatar-md" src="https://picsum.photos/200/200" />
+              <div class="badge av-badge-md"></div>
+            </div>
+          </script>
+
+          <p>
+            There are 4 types of badges for avatar and 1 for icons. badge-lg,
+            badge-md, badge-sm and badge-xs for large, medium, small and extra
+            small badges respectively.
+          </p>
+          <div class="examples">
+            <div class="icon-with-badge">
+              <span class="material-icons">home</span>
+              <div class="badge icon-badge">4</div>
+            </div>
+            <div class="avatar-with-badge">
+              <img
+                class="avatar avatar-xs"
+                src="https://picsum.photos/200/200"
+              />
+              <div class="badge av-badge-xs"></div>
+            </div>
+            <div class="avatar-with-badge">
+              <img
+                class="avatar avatar-sm"
+                src="https://picsum.photos/200/200"
+              />
+              <div class="badge av-badge-sm"></div>
+            </div>
+            <div class="avatar-with-badge">
+              <img
+                class="avatar avatar-md"
+                src="https://picsum.photos/200/200"
+              />
+              <div class="badge av-badge-md"></div>
+            </div>
+            <div class="avatar-with-badge">
+              <img
+                class="avatar avatar-lg"
+                src="https://picsum.photos/200/200"
+              />
+              <div class="badge av-badge-lg"></div>
+            </div>
           </div>
-        </div>
-    
-        <div class="card card-with-dismiss">
-          <div class="card-body">
-            <div class="figure-with-dismiss">
-              <img src="https://picsum.photos/400/300" />
-    
-              <div class="close-btn">
-                <span class="material-icons">close</span>
+        </section>
+
+        <section id="cards">
+          <h2>Cards</h2>
+
+          <p>
+            There are 5 types of buttons. primary-btn, secondary-btn,icon-btn,
+            link and floating-btn for primary, secondary, with icon, link and
+            floating buttons respectively.
+          </p>
+          <pre>
+          <code class="language-html">
+              @import url("https://lucidui.netlify.app/cards/cards.css");
+              &lt;link rel="stylesheet"
+              href="https://lucidui.netlify.app/cards/cards.css">
+          </code>
+        </pre>
+
+          <p>There are 9 types of cards.</p>
+          <ul>
+            <li>text-only-card: card with only text</li>
+            <li>card-with-dismiss: card has cross button to dismiss/close</li>
+            <li>card-with-badge: card with a badge on top left side</li>
+            <li>basic: basic card</li>
+            <li>basic-textovermedia: card having text over image</li>
+            <li>basic-with-header: card with header at top</li>
+            <li>basic-only-buttons: card with only buttons</li>
+            <li>basic-only-icons: card with only icons</li>
+            <li>horizontal: horizontal card</li>
+          </ul>
+          <script type="text/plain" class="language-markup">
+            <div class="card text-only-card">
+              <div class="card-body">
+                <div class="text-container">
+                  <div class="title-text">...</div>
+                  <div class="author-text">...</div>
+                </div>
+                <p class="description">...</p>
+              </div>
+
+              <div class="foot">...</div>
+            </div>
+
+            <div class="card card-with-badge">
+              <div class="card-body">
+                <div class="figure-with-badge">
+                  <img src="..." />
+                  <div class="badge">...</div>
+                </div>
+                <div class="text-container">
+                  <div class="title-text">...</div>
+                  <div class="author-text">...</div>
+                </div>
+                <p class="description">...</p>
+              </div>
+
+              <div class="foot">...</div>
+            </div>
+
+            <div class="card horizontal">
+              <div class="card-body">
+                <div class="img-text">
+                  <img src="..." />
+                  <div class="text-container">
+                    <div class="title-text">...</div>
+                    <div class="author-text">...</div>
+                  </div>
+                </div>
+                <p class="description">...</p>
+              </div>
+
+              <div class="foot">...</div>
+            </div>
+          </script>
+
+          <div class="examples">
+            <div class="card text-only-card">
+              <div class="card-body">
+                <div class="text-container">
+                  <div class="title-text">Our Changing Planet</div>
+                  <div class="author-text">by Kurt Wagner</div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Adipisci quisquam suscipit magni dicta,
+                  repellat, quod illo harum libero esse quidem veniam dolor
+                  dolores! Optio rerum atque maxime vero at voluptatibus!
+                </p>
+              </div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
               </div>
             </div>
-            <div class="text-container">
-              <div class="title-text">Our Changing Planet</div>
-              <div class="author-text">by Kurt Wagner</div>
-            </div>
-            <p class="description">
-              Visit ten places on our planet that are undergoing the biggest changes
-              today
-            </p>
-          </div>
-    
-          <div class="foot">
-            <button class='btn secondary-btn'>READ</button>
-            <button class='btn secondary-btn'>BOOKMARK</button>
-            <span class="material-icons">favorite</span>
-            <span class="material-icons">share</span>
-            <span class="material-icons">more_vert</span>
-          </div>
-        </div>
-    
-        <div class="card card-with-badge">
-          <div class="card-body">
-            <div class="figure-with-badge">
-              <img src="https://picsum.photos/400/300" />
-    
-              <div class="badge">
-                #1 bestseller
+
+            <div class="card card-with-dismiss">
+              <div class="card-body">
+                <div class="figure-with-dismiss">
+                  <img src="https://picsum.photos/100/200" />
+
+                  <div class="close-btn">
+                    <span class="material-icons">close</span>
+                  </div>
+                </div>
+                <div class="text-container">
+                  <div class="title-text">Our Changing Planet</div>
+                  <div class="author-text">by Kurt Wagner</div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today
+                </p>
+              </div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
               </div>
             </div>
-            <div class="text-container">
-              <div class="title-text">Our Changing Planet</div>
-              <div class="author-text">by Kurt Wagner</div>
+
+            <div class="card card-with-badge">
+              <div class="card-body">
+                <div class="figure-with-badge">
+                  <img src="https://picsum.photos/400/300" />
+
+                  <div class="badge">
+                    #1 bestseller
+                  </div>
+                </div>
+                <div class="text-container">
+                  <div class="title-text">Our Changing Planet</div>
+                  <div class="author-text">by Kurt Wagner</div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today
+                </p>
+              </div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
             </div>
-            <p class="description">
-              Visit ten places on our planet that are undergoing the biggest changes
-              today
-            </p>
-          </div>
-    
-          <div class="foot">
-            <button class='btn secondary-btn'>READ</button>
-            <button class='btn secondary-btn'>BOOKMARK</button>
-            <span class="material-icons">favorite</span>
-            <span class="material-icons">share</span>
-            <span class="material-icons">more_vert</span>
-          </div>
-        </div>
-    
-        <div class="card basic-1">
-          <div class="card-body">
-            <img src="https://picsum.photos/400/300" />
-    
-            <div class="text-container">
-              <div class="title-text">Our Changing Planet</div>
-              <div class="author-text">by Kurt Wagner</div>
+
+            <div class="card basic">
+              <div class="card-body">
+                <img src="https://picsum.photos/400/300" />
+
+                <div class="text-container">
+                  <div class="title-text">Our Changing Planet</div>
+                  <div class="author-text">by Kurt Wagner</div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today
+                </p>
+              </div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
             </div>
-            <p class="description">
-              Visit ten places on our planet that are undergoing the biggest changes
-              today
-            </p>
-          </div>
-    
-          <div class="foot">
-            <button class='btn secondary-btn'>READ</button>
-            <button class='btn secondary-btn'>BOOKMARK</button>
-            <span class="material-icons">favorite</span>
-            <span class="material-icons">share</span>
-            <span class="material-icons">more_vert</span>
-          </div>
-        </div>
-    
-        <div class="card basic-textovermedia-2">
-          <div class="card-body">
-            <div class="figure">
-              <img src="https://picsum.photos/400/300" />
+
+            <div class="card basic-textovermedia">
+              <div class="card-body">
+                <div class="figure">
+                  <img src="https://picsum.photos/400/300" />
+                  <div class="text-container">
+                    <div class="title-text">Our Changing Planet</div>
+                    <div class="author-text">by Kurt Wagner</div>
+                  </div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today
+                </p>
+              </div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card basic-with-header">
               <div class="text-container">
                 <div class="title-text">Our Changing Planet</div>
                 <div class="author-text">by Kurt Wagner</div>
               </div>
-            </div>
-            <p class="description">
-              Visit ten places on our planet that are undergoing the biggest changes
-              today
-            </p>
-          </div>
-    
-          <div class="foot">
-            <button class='btn secondary-btn'>READ</button>
-            <button class='btn secondary-btn'>BOOKMARK</button>
-            <span class="material-icons">favorite</span>
-            <span class="material-icons">share</span>
-            <span class="material-icons">more_vert</span>
-          </div>
-        </div>
-        
-        <div>
-          card basic-with-header
-          <div class="card basic-with-header">
-            <div class="text-container">
-              <div class="title-text">Our Changing Planet</div>
-              <div class="author-text">by Kurt Wagner</div>
-            </div>
-      
-            <div class="card-body">
-              <img src="https://picsum.photos/400/300" />
-      
-              <p class="description">
-                Visit ten places on our planet that are undergoing the biggest changes
-                today
-              </p>
-            </div>
-      
-            <div class="foot">
-              <button class='btn secondary-btn'>READ</button>
-              <button class='btn secondary-btn'>BOOKMARK</button>
-              <span class="material-icons">favorite</span>
-              <span class="material-icons">share</span>
-              <span class="material-icons">more_vert</span>
-            </div>
-          </div>
-        </div>
-        
-        <div>
-            card basic-only-buttons
-          <div class="card basic-only-buttons">
-            <div class="card-body">
-              <img src="https://picsum.photos/400/300" />
-      
-              <div class="text-container">
-                <div class="title-text">Our Changing Planet</div>
-                <div class="author-text">by Kurt Wagner</div>
+
+              <div class="card-body">
+                <img src="https://picsum.photos/400/300" />
+
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today
+                </p>
               </div>
-              <p class="description">
-                Visit ten places on our planet that are undergoing the biggest changes
-                today
-              </p>
-            </div>
-      
-            <div class="foot">
-              <button class='btn secondary-btn'>READ</button>
-              <button class='btn secondary-btn'>BOOKMARK</button>
-              <span class="material-icons">favorite</span>
-              <span class="material-icons">share</span>
-              <span class="material-icons">more_vert</span>
-            </div>
-          </div>
-        </div>
-    
-        <div class="card basic-only-icons">
-          <div class="card-body">
-            <img src="https://picsum.photos/400/300" />
-    
-            <div class="text-container">
-              <div class="title-text">Our Changing Planet</div>
-              <div class="author-text">by Kurt Wagner</div>
-            </div>
-            <p class="description">
-              Visit ten places on our planet that are undergoing the biggest changes
-              today
-            </p>
-          </div>
-    
-          <div class="foot">
-            <button class='btn secondary-btn'>READ</button>
-            <button class='btn secondary-btn'>BOOKMARK</button>
-            <span class="material-icons">favorite</span>
-            <span class="material-icons">share</span>
-            <span class="material-icons">more_vert</span>
-          </div>
-        </div>
-    
-        <div class="card horizontal">
-          <div class="card-body">
-            <div class="img-text">
-              <img src="https://picsum.photos/400/300" />
-    
-              <div class="text-container">
-                <div class="title-text">Our Changing Planet</div>
-                <div class="author-text">by Kurt Wagner</div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
               </div>
             </div>
-            <p class="description">
-              Visit ten places on our planet that are undergoing the biggest changes
-              today
-            </p>
+
+            <div>
+              card basic-only-buttons
+              <div class="card basic-only-buttons">
+                <div class="card-body">
+                  <img src="https://picsum.photos/400/300" />
+
+                  <div class="text-container">
+                    <div class="title-text">Our Changing Planet</div>
+                    <div class="author-text">by Kurt Wagner</div>
+                  </div>
+                  <p class="description">
+                    Visit ten places on our planet that are undergoing the
+                    biggest changes today
+                  </p>
+                </div>
+
+                <div class="foot">
+                  <div class="action-buttons">
+                    <button class="btn secondary-btn">READ</button>
+                    <button class="btn secondary-btn">BOOKMARK</button>
+                  </div>
+                  <div class="action-icons">
+                    <span class="material-icons">favorite</span>
+                    <span class="material-icons">share</span>
+                    <span class="material-icons">more_vert</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card basic-only-icons">
+              <div class="card-body">
+                <img src="https://picsum.photos/400/300" />
+
+                <div class="text-container">
+                  <div class="title-text">Our Changing Planet</div>
+                  <div class="author-text">by Kurt Wagner</div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today
+                </p>
+              </div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card horizontal">
+              <div class="card-body">
+                <div class="img-text">
+                  <img src="https://picsum.photos/400/300" />
+
+                  <div class="text-container">
+                    <div class="title-text">Our Changing Planet</div>
+                    <div class="author-text">by Kurt Wagner</div>
+                  </div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today
+                </p>
+              </div>
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">READ</button>
+                  <button class="btn secondary-btn">BOOKMARK</button>
+                </div>
+                <div class="action-icons">
+                  <span class="material-icons">favorite</span>
+                  <span class="material-icons">share</span>
+                  <span class="material-icons">more_vert</span>
+                </div>
+              </div>
+            </div>
           </div>
-    
-          <div class="foot">
-            <button class='btn secondary-btn'>READ</button>
-            <button class='btn secondary-btn'>BOOKMARK</button>
-            <span class="material-icons">favorite</span>
-            <span class="material-icons">share</span>
-            <span class="material-icons">more_vert</span>
+        </section>
+
+        <section id="images">
+          <h2>Images</h2>
+
+          <pre>
+          <code class="language-html">
+              @import url("https://lucidui.netlify.app/image/image.css");
+              &lt;link rel="stylesheet"
+              href="https://lucidui.netlify.app/image/image.css">
+          </code>
+        </pre>
+
+          <p>
+            There are 2 types of images.img-responsive and round-img for
+            responsive and round images respectively.
+          </p>
+
+          <script type="text/plain" class="language-markup">
+            <div class="img-container">
+              <img src="https://picsum.photos/400/300" class='img-responsive'/>
+            </div>
+
+            <div class="round-img-container">
+              <img src="https://picsum.photos/400/300" class="round-img" />
+            </div>
+          </script>
+
+          <p>A responsive image and a round image.</p>
+          <div class="examples">
+            <div class="img-container">
+              <img src="https://picsum.photos/400/300" class="img-responsive" />
+            </div>
+            <div class="round-img-container">
+              <img src="https://picsum.photos/400/300" class="round-img" />
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section id="input">
+          <h2>Inputs</h2>
+          <pre>
+          <code class="language-html">
+              @import url("https://lucidui.netlify.app/input/input.css");
+              &lt;link rel="stylesheet"
+              href="https://lucidui.netlify.app/input/input.css">
+          </code>
+        </pre>
+
+          <p>
+            There are 4 types of inputs.img-responsive and round-img for
+            responsive and round images respectively. input is the common class
+            which is for generalised input field. input-error, input-warning and
+            input-success for error, warning and successful inputs respectively.
+          </p>
+
+          <script type="text/plain" class="language-markup">
+            <div class='input-container'>
+              <input class="input input-error" placeholder='enter email-id' type-='email'/>
+              <p>invalid input</p>
+            </div>
+
+            <input class="input" placeholder='enter email-id' type-='email'/>
+          </script>
+
+          <div class="examples">
+            <div class="input-container">
+              <input
+                class="input input-error"
+                placeholder="enter email-id"
+                type-="email"
+              />
+              <p>invalid input</p>
+            </div>
+            <div class="input-container">
+              <input
+                class="input input-warning"
+                placeholder="password"
+                type-="text"
+              />
+              <p>weak password</p>
+            </div>
+            <div class="input-container">
+              <input
+                class="input input-success"
+                placeholder="enter email-id"
+                type-="email"
+              />
+              <p>lets go!</p>
+            </div>
+            <input class="input" placeholder="enter email-id" type-="email" />
+          </div>
+        </section>
+
+        <section id="navigation">
+          <h2>Navigation</h2>
+          <pre>
+              <code class="language-html">
+                  @import url("https://lucidui.netlify.app/navigation/navigation.css");
+                  &lt;link rel="stylesheet"
+                  href="https://lucidui.netlify.app/navigation/navigation.css">
+              </code>
+            </pre>
+
+          <div class="examples">
+            <div class="nav">
+              <h2>Shopping App</h2>
+              <ul class="nav-links-container">
+                <li class="link">Home</li>
+                <li class="link">Wishlist</li>
+                <li class="link">Cart</li>
+              </ul>
+            </div>
+          </div>
+          <p>
+            The class name for navigation container is nav, and for the list
+            itself is nav-links-container as shown in the code below.
+          </p>
+
+          <script type="text/plain" class="language-markup">
+            <div class="nav">
+                <h2>...</h2>
+                <ul class="nav-links-container">
+                  <li class="link">...</li>
+                  <li class="link">...</li>
+                </ul>
+              </div>
+          </script>
+        </section>
+
+        <section id="list">
+          <h2>List</h2>
+          <pre>
+              <code class="language-html">
+                  @import url("https://lucidui.netlify.app/lists/list.css");
+                  &lt;link rel="stylesheet"
+                  href="https://lucidui.netlify.app/lists/list.css">
+              </code>
+            </pre>
+
+          <div class="examples">
+            <div class="list-wrapper">
+              <div class="list no-bullet-list">
+                <div class="list-header">
+                  <h2>list header</h2>
+                  <h3>—</h3>
+                </div>
+                <ul>
+                  <li>List item 1</li>
+                  <li>List item 2</li>
+                  <li>List item 3</li>
+                  <li>List item 4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p>
+            The class name for list is list, and to get list items with no
+            bullets, it is no-bullet-list. list-header is the class name for
+            header of the list.
+          </p>
+
+          <script type="text/plain" class="language-markup">
+            <div class="list no-bullet-list">
+                <div class="list-header">
+                  <h2>...</h2>
+                  <h3>—</h3>
+                </div>
+                <ul>
+                  <li>...</li>
+                  <li>...</li>
+                  <li>...</li>
+                </ul>
+              </div>
+          </script>
+        </section>
+      </main>
     </section>
 
-    <section id='images'>
-      <h2>Images</h2>
-      <p>Responsive image and round image.</p>
-      <div class='examples'>
-        <div class="img-container">
-          <img src="https://picsum.photos/400/300" class='img-responsive'/>
-        </div>
-        <div class="round-img-container">
-          <img src="https://picsum.photos/400/300" class="round-img" />
-        </div>
-      </div>
-    </section>
-
-    <section id='input'>
-      <p>There are 4 different types of inputs. </p>
-      <div class='examples'>
-        <div class='input-container'>
-          <input class="input input-error" placeholder='enter email-id' type-='email'/>
-          <p>invalid input</p>
-        </div>
-        <div class='input-container'>
-          <input class="input input-warning" placeholder='password' type-='text'/>
-          <p>weak password</p>
-        </div>
-        <div class='input-container'>
-          <input class="input input-success" placeholder='enter email-id' type-='email'/>
-          <p>lets go!</p>
-        </div>
-        <input class="input" placeholder='enter email-id' type-='email'/>
-      </div>
-    </section>
-
-  </main>
-</body>
-
+    <script src="./prism.js"></script>
+  </body>
 </html>

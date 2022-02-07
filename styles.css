@@ -1,57 +1,78 @@
-@import './alert/alert.css';
-@import './avatar/avatar.css';
-@import './button/button.css';
-@import './badges/badges.css';
-@import './cards/cards.css';
-@import './image/image.css';
-@import './input/input.css';
+@import "./library.css";
 
 @media (min-width: 750px) {
-    main{
-    max-width:720px;
-    }
+  main {
+    max-width: 720px;
+  }
 }
 
-img {
-    max-inline-size: 100%;
-    block-size: auto;
+body {
+  justify-content: center;
+  position: relative;
 }
 
-body{
-    display:grid;
-    grid-auto-flow:column;
-    justify-content: center;
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  left: 0;
 }
 
-aside{
-    padding:4rem;
-    position:fixed;
-    margin-left: auto;
+section {
+  padding-bottom: 4rem;
 }
 
-aside>*{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-    padding:1rem;
-    border-radius:2rem;
-    text-decoration: none;
-    color:black;
+.examples {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
-
-section{
-    padding-top:4rem;
-    grid-row:4/5;
+.sidebar {
+  position: fixed;
+  top: 6rem;
+  margin: 4rem;
+  height: 80vh;
+  overflow-y: scroll;
+  width: 200px;
 }
 
-.examples{
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    gap:1rem;
+.sidebar > * {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black;
 }
 
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
 
+main {
+  padding-left: calc(10rem + 200px);
+  padding-top: 6rem;
+}
+
+footer {
+}
+
+iframe {
+  height: auto;
+  width: 100%;
+}
+
+pre {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.list-wrapper {
+  width: 200px;
+}

@@ -1,17 +1,13 @@
-:root {
-  --primary-color:darkblue;
-}
+@import "../general/fonts-colors.css";
 
-.img-responsive{
+.img-responsive {
   max-inline-size: 100%;
   block-size: auto;
-  
 }
-  .round-img {
-    width:100%;
-    object-fit: contain;
-    border-radius:50%;
-    aspect-ratio: 1/1;
-    background-color:var(--primary-color);
-  }
-  
+.round-img {
+  width: 100%;
+  border-radius: 50%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+  background-color: var(--secondary-color);
+}
