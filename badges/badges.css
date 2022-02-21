@@ -1,6 +1,4 @@
-:root {
-    --online-color: darkgreen;
-}
+@import '../general/fonts-colors.css';
 
 /* parent container of avatar and badge */
 .avatar-with-badge {

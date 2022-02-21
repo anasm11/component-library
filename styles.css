@@ -1,57 +1,98 @@
-@import './alert/alert.css';
-@import './avatar/avatar.css';
-@import './button/button.css';
-@import './badges/badges.css';
-@import './cards/cards.css';
-@import './image/image.css';
-@import './input/input.css';
+@import "./library.css";
 
-@media (min-width: 750px) {
-    main{
-    max-width:720px;
-    }
+@media (max-width: 768px) {
+  main {
+    grid-column:2/4;
+    padding-right: 1rem;
+  }
 }
-
-img {
-    max-inline-size: 100%;
-    block-size: auto;
-}
-
-body{
-    display:grid;
-    grid-auto-flow:column;
-    justify-content: center;
-}
-
-aside{
-    padding:4rem;
-    position:fixed;
-    margin-left: auto;
-}
-
-aside>*{
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex: 1 1 100%;
-    padding:1rem;
-    border-radius:2rem;
-    text-decoration: none;
-    color:black;
+@media (min-width: 768px) {
+  main {
+    grid-column:2/3;
+    padding-right: 1rem;
+  }
 }
 
 
-section{
-    padding-top:4rem;
-    grid-row:4/5;
+body {
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows:min-content;
+  margin:0;
+  gap:2rem;
 }
 
-.examples{
-    display:flex;
-    align-items:center;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    gap:1rem;
+header {
+  grid-column:1/4;
+  grid-row:1/2;
+  position:sticky;
+  top:0;
+  z-index:9999;
+}
+
+.sidebar {
+  position:sticky;
+  top:6rem;
+  z-index:9999;
+  grid-column:1/2;
+  width:fit-content;
+  display: flex;
+  flex-direction:column;
+  justify-self:center;
+  height:80vh;
+  overflow-y:scroll;
+}
+
+.sidebar > * {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black; 
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
 }
 
 
+
+section {
+  padding-top: 3.5rem;
+}
+
+.examples {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem ;
+}
+
+iframe {
+  height: auto;
+  width: 100%;
+}
+
+pre {
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.card-container{
+  max-width:350px;
+}
+
+.slidecontainer{
+  width:250px;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:visited{
+  text-decoration:none;
+}
