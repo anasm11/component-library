@@ -1,0 +1,20 @@
+.nav {
+  flex: 1 1 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 7rem;
+  background-color: var(--secondary-color);
+}
+
+.nav-links-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+  align-items: center;
+}
+
+.nav-links-container>li>.material-icons {
+  font-size:2rem;
+}
