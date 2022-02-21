@@ -1,10 +1,4 @@
-:root {
-  --primary-color:darkblue;
-  --secondary-color:lightblue;
-  /* --bkg-clr:linear-gradient(45deg,aqua  0%, rgba(182, 241, 252, 1) 50%, rgba(252, 174, 241, 1) 70%); */
-  --hover-colour:lightgray;
-
-}
+@import "../general/fonts-colors.css";
 
 /* general for button */
 
@@ -47,7 +41,7 @@
 
 .link:hover {
   background-color: var(--secondary-color);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .floating-btn {
@@ -59,14 +53,13 @@
   border-radius: 50%;
   border: none;
   font-size: 1.5rem;
-  position:fixed;
-  bottom:4rem;
-  right:3rem;
-  z-index:99;
+  position: fixed;
+  bottom: 4rem;
+  right: 3rem;
+  z-index: 99;
   box-shadow: 0rem 0rem 1rem 0rem var(--primary-color);
 }
 
 .floating-btn:hover {
   cursor: pointer;
 }
-
