@@ -1,0 +1,16 @@
+:root {
+  --primary-color: darkblue;
+  --secondary-color: lightblue;
+  /* --bkg-clr:linear-gradient(45deg,aqua  0%, rgba(182, 241, 252, 1) 50%, rgba(252, 174, 241, 1) 70%); */
+  --secondary-text-color: gray;
+  --hover-colour: lightgray;
+  --primary-text-color: black;
+  --danger-color: red;
+
+  --error-bkg-clr: rgb(255, 150, 150);
+  --success-bkg-clr: rgb(150, 255, 150);
+  --info-bkg-clr: rgb(150, 255, 255);
+  --warn-bkg-clr: rgb(255, 255, 150);
+  --online-color: darkgreen;
+  --rating-color:gold;
+}
