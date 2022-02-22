@@ -1,9 +1,4 @@
-:root{
-    --error-bkg-clr:rgb(255, 150, 150);
-    --success-bkg-clr:rgb(150, 255, 150);
-    --info-bkg-clr:rgb(150, 255, 255);
-    --warn-bkg-clr:rgb(255, 255, 150);
-}
+@import '../general/fonts-colors.css';
 
 .input {
     border-radius: 0.5rem;

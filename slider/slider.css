@@ -1,0 +1,12 @@
+.slider:hover {
+    cursor: pointer;
+  }
+
+  .slider{
+      width:100%;
+  }
+
+  .values{
+      display:flex;
+      justify-content: space-between;
+  }
