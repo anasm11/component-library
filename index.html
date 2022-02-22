@@ -675,10 +675,11 @@
           <div class="round-img-container">
             <img src="https://picsum.photos/400/300" class="round-img" />
           </div>
+          
         </div>
       </section>
 
-      <!-- Avatar section -->
+      <!-- Input section -->
       <section id="input">
         <h2>Inputs</h2>
         <pre>
@@ -868,59 +869,111 @@
         
       </section>
 
-      <!-- Typography section -->
-      <section id="typography">
-        <h2>Typography</h2>
+      <!-- Toast section -->
+      <section id="toast">
+        <h2>Toast</h2>
         <pre>
             <code class="language-html">
-                @import url("https://lucidui.netlify.app/typography/typography.css");
+                @import url("https://lucidui.netlify.app/toast/toast.css");
                 &lt;link rel="stylesheet"
-                href="https://lucidui.netlify.app/typography/typography.css">
+                href="https://lucidui.netlify.app/toast/toast.css">
             </code>
           </pre>
 
         <div class="examples">
-          <div class='large-text'>Large text
+          <div class="toast toast-success">
+            This is a success toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
             </div>
-            <div class='small-text'>Small text
+          </div>
+          <div class="toast toast-error">
+            This is an error toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
             </div>
-            <div class='gray-text'>Gray text
+          </div>
+          <div class="toast toast-warning">
+            This is a warning toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
             </div>
-            <div class='center-text'>Centered text
+          </div>
+        </div>
+        <p>
+          Toasts are used to show pop up messages. There are 3 types of toasts: success-toast for success toast, error-toast for error toast and warning-toast for warning toast respectively. 
+          There are 3 classes which can be used for positioning: bottom-center, bottom-left, bottom-right for center, left and right bottom positioning respectively.   </p>
+
+        <script type="text/plain" class="language-markup">
+          <div class="toast toast-success">
+            This is a success toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
             </div>
-            <div class='h1'>Heading-1
+          </div>
+        </script>
+      </section>
+
+      <!-- Rating section -->
+      <section id="rating-bar">
+        <h2>Rating bar</h2>
+        <pre>
+            <code class="language-html">
+                @import url("https://lucidui.netlify.app/ratingBar/rating-bar.css");
+                &lt;link rel="stylesheet"
+                href="https://lucidui.netlify.app/ratingBar/rating-bar.css">
+            </code>
+          </pre>
+
+        <div class="examples">
+          <div class='rating-bar'>
+            <div class='stars'>
+              <span class="material-icons" id='star-1'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-2'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-3'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-4'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-5'>
+                star_rate
+              </span>
             </div>
-            <div class='h2'> Heading-2
+            <div class='rating-info' id='rating-info'>
+              Rating: 0/5
             </div>
-            <div class='h3'> Heading-3
-            </div>
-            <div class='h4'> Heading-4
-            </div>
-            <div class='h5'> Heading-5
-            </div>
-            <div class='h6'> Heading-6
-            </div>
+          </div>
         </div>
         <p>
         </p>
 
         <script type="text/plain" class="language-markup">
-          <div class='large-text'>Large text
-          </div>
-          <div class='small-text'>Small text
-          </div>
-          <div class='gray-text'>Gray text
-          </div>
-          <div class='center-text'>Centered text
-          </div>
-          <div class='h1'>Heading-1
-          </div>
-          <div class='h2'> Heading-2
+          <div class='rating-bar'>
+            <div class='stars'>
+              <span class="material-icons coloured">
+                star_rate
+              </span>
+              <span class="material-icons coloured">
+                star_rate
+              </span>
+              .
+              .
+              .
+            </div>
+            <div class='rating-info'>
+              Rating: 3/5
+            </div>
           </div>
         </script>
       </section>
     </main>
-
+   
     <script src="./prism.js"></script>
+    <script src="./ratingBar/ratingBar.js"></script>
   </body>
 </html>

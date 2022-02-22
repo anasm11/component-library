@@ -1,0 +1,61 @@
+@import '../general/fonts-colors.css';
+
+/* general toast */
+.toast {
+    padding: 0.5rem;
+    margin:0.2rem;
+    border-radius: 0.5rem;
+    display: flex ;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    z-index:99;
+}
+
+/* special cases of toast */
+.toast-error {
+    background-color: var(--error-bkg-clr);
+}
+
+.toast-success {
+    background-color: var(--success-bkg-clr);
+}
+
+.toast-warning {
+    background-color: var(--warn-bkg-clr);
+}
+
+.toast>.close-btn{
+    position:absolute;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    right:0;
+    background-color:inherit;
+}
+
+.close-btn:hover{
+    cursor:pointer;
+}
+
+.bottom-center{
+    position:fixed;
+    bottom:0;
+    left:50%;
+    width:100px;
+    transform: translate(-50%, 0);
+}
+
+.bottom-left{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100px;
+}
+
+.bottom-right{
+    position:fixed;
+    width:100px;
+    bottom:0;
+    right:0;
+}
