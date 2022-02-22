@@ -675,10 +675,11 @@
           <div class="round-img-container">
             <img src="https://picsum.photos/400/300" class="round-img" />
           </div>
+          
         </div>
       </section>
 
-      <!-- Avatar section -->
+      <!-- Input section -->
       <section id="input">
         <h2>Inputs</h2>
         <pre>
@@ -901,6 +902,7 @@
         </script>
       </section>
 
+<<<<<<< HEAD
       <!-- Grids section -->
       <section id="grids">
         <h2>Simple Grids</h2>
@@ -909,11 +911,11 @@
                 @import url("https://lucidui.netlify.app/grids/grids.css");
                 &lt;link rel="stylesheet"
                 href="https://lucidui.netlify.app/grids/grids.css">
-            </code>
-          </pre>
-
-        <div class="examples">
-          <h3>A 50-50% grid.</h3>
+              </code>
+            </pre>
+  
+          <div class="examples">
+            <h3>A 50-50% grid.</h3>
           <div class='grid-2 grid-2-50-50'>
             <div class='grid-2-child-1'>
               <img src='https://picsum.photos/400/300'/>
@@ -971,13 +973,115 @@
             <div class='grid-3-child-2'>...</div>
             <div class='grid-3-child-3'>...</div>
           </div>
+        </script>
+        
+      <!-- Toast section -->
+      <section id="toast">
+        <h2>Toast</h2>
+        <pre>
+            <code class="language-html">
+                @import url("https://lucidui.netlify.app/toast/toast.css");
+                &lt;link rel="stylesheet"
+                href="https://lucidui.netlify.app/toast/toast.css">
+            </code>
+          </pre>
+
+        <div class="examples">
+          <div class="toast toast-success">
+            This is a success toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
+            </div>
+          </div>
+          <div class="toast toast-error">
+            This is an error toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
+            </div>
+          </div>
+          <div class="toast toast-warning">
+            This is a warning toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
+            </div>
+          </div>
+        </div>
+        <p>
+          Toasts are used to show pop up messages. There are 3 types of toasts: success-toast for success toast, error-toast for error toast and warning-toast for warning toast respectively. 
+          There are 3 classes which can be used for positioning: bottom-center, bottom-left, bottom-right for center, left and right bottom positioning respectively.   </p>
+
+        <script type="text/plain" class="language-markup">
+          <div class="toast toast-success">
+            This is a success toast.
+            <div class="close-btn">
+              <span class="material-icons">close</span>
+            </div>
+          </div>
+        </script>
+      </section>
+
+      <!-- Rating section -->
+      <section id="rating-bar">
+        <h2>Rating bar</h2>
+        <pre>
+            <code class="language-html">
+                @import url("https://lucidui.netlify.app/ratingBar/rating-bar.css");
+                &lt;link rel="stylesheet"
+                href="https://lucidui.netlify.app/ratingBar/rating-bar.css">
+            </code>
+          </pre>
+
+        <div class="examples">
+          <div class='rating-bar'>
+            <div class='stars'>
+              <span class="material-icons" id='star-1'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-2'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-3'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-4'>
+                star_rate
+              </span>
+              <span class="material-icons" id='star-5'>
+                star_rate
+              </span>
+            </div>
+            <div class='rating-info' id='rating-info'>
+              Rating: 0/5
+            </div>
+          </div>
+        </div>
+        <p>
+          
+        </p>
+
+        <script type="text/plain" class="language-markup">
+          <div class='rating-bar'>
+            <div class='stars'>
+              <span class="material-icons coloured">
+                star_rate
+              </span>
+              <span class="material-icons coloured">
+                star_rate
+              </span>
+              .
+              .
+              .
+            </div>
+            <div class='rating-info'>
+              Rating: 3/5
+            </div>
+          </div>
 
         </script>
       </section>
 
     </main>
-   
-
     <script src="./prism.js"></script>
+    <script src="./ratingBar/ratingBar.js"></script>
   </body>
 </html>

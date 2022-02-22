@@ -9,5 +9,7 @@
 @import "./navigation/navigation.css";
 @import "./modal/modal.css";
 @import "./grids/grids.css";
+@import "./toast/toast.css";
+@import "./ratingBar/rating-bar.css";
 @import "./slider/slider.css";
 @import "./typography/typography.css";
