@@ -5,10 +5,6 @@
   max-inline-size: 100%;
   block-size: auto;
   object-fit: cover;
-<<<<<<< HEAD
-  border-radius: 1rem 1rem 1rem 1rem;
-=======
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
 }
 
 .card {
@@ -55,19 +51,11 @@
 
 .author-text {
   font-weight: bold;
-<<<<<<< HEAD
-  padding: 0.25rem 0rem 0rem 0rem;
-}
-
-.description {
-  margin: 0.5rem 0rem 0.5rem 0;
-=======
   padding: 4px 0 0 0;
 }
 
 .description {
   margin: 8px 0rem 8px 0;
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
   padding: 0rem 1rem 0rem 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -95,10 +83,6 @@
 
 .action-icons {
   display: flex;
-<<<<<<< HEAD
-  flex-wrap: nowrap;
-=======
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
 }
 
 .action-icons > * {
@@ -123,14 +107,6 @@
   position: relative;
 }
 
-<<<<<<< HEAD
-
-.basic-with-header > .card-body > img {
-  border-radius: 0;
-}
-
-=======
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
 .basic-only-buttons .action-icons {
   display: none;
 }
@@ -145,13 +121,8 @@
 }
 
 .horizontal > .card-body > .img-text > img {
-<<<<<<< HEAD
-  width: 100px;
-  height: 90px;
-=======
   width: 7rem;
   height: 6rem;
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
   flex: 0 1 auto;
 }
 
@@ -166,11 +137,7 @@
 .card-badge {
   background-color: var(--primary-color);
   position: absolute;
-<<<<<<< HEAD
-  font-size: 0.75rem;
-=======
   font-size: 12px;
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
   display: flex;
   top: 0.5rem;
   left: 0.5rem;
@@ -210,20 +177,10 @@
 
 .horizontal-card>img{
   padding:1rem;
-<<<<<<< HEAD
-  height:100px;
-  width: 100px;
-=======
   height:7rem;
   width: 7rem;
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
 }
 
 .horizontal-card>.foot{
   display:flex;
-<<<<<<< HEAD
-  flex-wrap: nowrap;
 }
-=======
-}
->>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
