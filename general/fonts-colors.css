@@ -1,4 +1,5 @@
 :root {
+<<<<<<< HEAD
   --primary-color: darkblue;
   --secondary-color: lightblue;
   /* --bkg-clr:linear-gradient(45deg,aqua  0%, rgba(182, 241, 252, 1) 50%, rgba(252, 174, 241, 1) 70%); */
@@ -6,11 +7,24 @@
   --hover-colour: lightgray;
   --primary-text-color: black;
   --danger-color: red;
+=======
+  --primary-color: rgb(0, 0, 139);
+  --secondary-color: rgb(173, 216, 230);
+  --secondary-text-color: rgb(128, 128, 128);
+  --hover-colour: rgb(211, 211, 211);
+  --primary-text-color: rgb(0, 0, 0);
+  --danger-color: rgb(255, 0, 0);
+>>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
 
   --error-bkg-clr: rgb(255, 150, 150);
   --success-bkg-clr: rgb(150, 255, 150);
   --info-bkg-clr: rgb(150, 255, 255);
   --warn-bkg-clr: rgb(255, 255, 150);
+<<<<<<< HEAD
   --online-color: darkgreen;
   --rating-color:gold;
+=======
+  --online-color: rgb(0,100,0);
+  --rating-color:rgb(255, 215, 0);
+>>>>>>> a5daba07c6b2f09b992084372fd2a9bf48c90c0c
 }
