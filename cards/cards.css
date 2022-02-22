@@ -5,7 +5,6 @@
   max-inline-size: 100%;
   block-size: auto;
   object-fit: cover;
-  border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .card {
@@ -52,11 +51,11 @@
 
 .author-text {
   font-weight: bold;
-  padding: 0.25rem 0rem 0rem 0rem;
+  padding: 4px 0 0 0;
 }
 
 .description {
-  margin: 0.5rem 0rem 0.5rem 0;
+  margin: 8px 0rem 8px 0;
   padding: 0rem 1rem 0rem 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -84,7 +83,6 @@
 
 .action-icons {
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .action-icons > * {
@@ -109,11 +107,6 @@
   position: relative;
 }
 
-
-.basic-with-header > .card-body > img {
-  border-radius: 0;
-}
-
 .basic-only-buttons .action-icons {
   display: none;
 }
@@ -128,8 +121,8 @@
 }
 
 .horizontal > .card-body > .img-text > img {
-  width: 100px;
-  height: 90px;
+  width: 7rem;
+  height: 6rem;
   flex: 0 1 auto;
 }
 
@@ -144,7 +137,7 @@
 .card-badge {
   background-color: var(--primary-color);
   position: absolute;
-  font-size: 0.75rem;
+  font-size: 12px;
   display: flex;
   top: 0.5rem;
   left: 0.5rem;
@@ -184,11 +177,10 @@
 
 .horizontal-card>img{
   padding:1rem;
-  height:100px;
-  width: 100px;
+  height:7rem;
+  width: 7rem;
 }
 
 .horizontal-card>.foot{
   display:flex;
-  flex-wrap: nowrap;
 }

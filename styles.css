@@ -53,10 +53,6 @@ header {
   color: black; 
 }
 
-/* .sidebar::-webkit-scrollbar {
-  display: none;
-} */
-
 .sidebar:hover {
   overflow-y: scroll;
 }
