@@ -17,7 +17,7 @@
     <header class="nav">
       <h1>lucid UI</h1>
       <ul class="nav-links-container">
-        <li class="link" ><a href='#avatar'>Home</a></li>
+        <li class="link" ><a href='#usage'>Home</a></li>
         <li class="link" ><a href='https://github.com/anasm11/component-library'>Github</a></li>
         <li class="link">
           <span class="material-icons">
@@ -67,7 +67,7 @@
         </p>
       </section>
 
-
+      <!-- Avatar section -->
       <section id="avatar">
         <h2>Avatar</h2>
         <pre>
@@ -836,6 +836,145 @@
         </script>
       </section>
 
+      <!-- Modal section -->
+      <section id="modal">
+        <h2>Modal</h2>
+        <pre>
+            <code class="language-html">
+                @import url("https://lucidui.netlify.app/modal/modal.css");
+                &lt;link rel="stylesheet"
+                href="https://lucidui.netlify.app/modal/modal.css">
+            </code>
+          </pre>
+
+        <div class="examples">
+          <div class='modal'>
+            <div class="card text-only-card">
+              <div class="card-body">
+                <div class="close-btn">
+                  <span class="material-icons">close</span>
+                </div>
+                <div class="text-container">
+                  <div class="title-text">Our Changing Planet</div>
+                  <div class="author-text">by Kurt Wagner</div>
+                </div>
+                <p class="description">
+                  Visit ten places on our planet that are undergoing the biggest
+                  changes today Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit.
+                </p>
+              </div>
+          
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">Cancel</button>
+                  <button class="btn primary-btn">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          Modals are used to show any important information to the user and they are closed only on user prompt.
+        </p>
+
+        <script type="text/plain" class="language-markup">
+          <div class='modal'>
+            <div class="card text-only-card">
+              <div class="card-body">
+                <div class="text-container">
+                  <div class="title-text">...</div>
+                  <div class="author-text">...</div>
+                </div>
+                <p class="description">...</p>
+              </div>
+          
+
+              <div class="foot">
+                <div class="action-buttons">
+                  <button class="btn secondary-btn">Cancel</button>
+                  <button class="btn primdary-btn">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </script>
+      </section>
+
+      <!-- Grids section -->
+      <section id="grids">
+        <h2>Simple Grids</h2>
+        <pre>
+            <code class="language-html">
+                @import url("https://lucidui.netlify.app/grids/grids.css");
+                &lt;link rel="stylesheet"
+                href="https://lucidui.netlify.app/grids/grids.css">
+              </code>
+            </pre>
+  
+          <div class="examples">
+            <h3>A 50-50% grid.</h3>
+          <div class='grid-2 grid-2-50-50'>
+            <div class='grid-2-child-1'>
+              <img src='https://picsum.photos/400/300'/>
+            </div>
+            <div class='grid-2-child-2'>
+              <img src='https://picsum.photos/400/300'/>
+            </div>
+          </div>
+
+          <h3>A 70-30% grid.</h3>
+          <div class='grid-2 grid-2-70-30'>
+            <div class='grid-2-child-1'>
+              <img src='https://picsum.photos/600/300'/>
+            </div>
+            <div class='grid-2-child-2'>
+              <img src='https://picsum.photos/250/300'/>
+            </div>
+          </div>
+
+          <h3>A 30-70% grid.</h3>
+          <div class='grid-2 grid-2-30-70'>
+            <div class='grid-2-child-1'>
+              <img src='https://picsum.photos/250/300'/>
+            </div>
+            <div class='grid-2-child-2'>
+              <img src='https://picsum.photos/600/300'/>
+            </div>
+          </div>
+
+          <h3>A 3 child grid.</h3>
+          <div class='grid-3'>
+            <div class='grid-3-child-1'>
+              <img src='https://picsum.photos/400/300'/>
+            </div>
+            <div class='grid-3-child-2'>
+              <img src='https://picsum.photos/400/300'/>
+            </div>
+            <div class='grid-3-child-3'>
+              <img src='https://picsum.photos/400/300'/>
+            </div>
+          </div>
+        </div>
+        <p>
+          
+        </p>
+
+        <script type="text/plain" class="language-markup">
+          <div class='grid-2 grid-2-30-70'>
+            <div class='grid-2-child-1'>...</div>
+            <div class='grid-2-child-2'>...</div>
+          </div>
+
+          <div class='grid-3'>
+            <div class='grid-3-child-1'>...</div>
+            <div class='grid-3-child-2'>...</div>
+            <div class='grid-3-child-3'>...</div>
+          </div>
+        </script>
+      </section>
+
       <!-- Slider section -->
       <section id='slider'>
         <h2>Slider</h2>
@@ -950,6 +1089,7 @@
           </div>
         </div>
         <p>
+          
         </p>
 
         <script type="text/plain" class="language-markup">
@@ -969,10 +1109,63 @@
               Rating: 3/5
             </div>
           </div>
+
         </script>
       </section>
+
+      <!-- Typography section -->
+      <section id="typography">
+        <h2>Typography</h2>
+        <pre>
+            <code class="language-html">
+                @import url("https://lucidui.netlify.app/typography/typography.css");
+                &lt;link rel="stylesheet"
+                href="https://lucidui.netlify.app/typography/typography.css">
+            </code>
+          </pre>
+
+        <div class="examples">
+          <div class='large-text'>Large text
+            </div>
+            <div class='small-text'>Small text
+            </div>
+            <div class='gray-text'>Gray text
+            </div>
+            <div class='center-text'>Centered text
+            </div>
+            <div class='h1'>Heading-1
+            </div>
+            <div class='h2'> Heading-2
+            </div>
+            <div class='h3'> Heading-3
+            </div>
+            <div class='h4'> Heading-4
+            </div>
+            <div class='h5'> Heading-5
+            </div>
+            <div class='h6'> Heading-6
+            </div>
+        </div>
+        <p>
+        </p>
+
+        <script type="text/plain" class="language-markup">
+          <div class='large-text'>Large text
+          </div>
+          <div class='small-text'>Small text
+          </div>
+          <div class='gray-text'>Gray text
+          </div>
+          <div class='center-text'>Centered text
+          </div>
+          <div class='h1'>Heading-1
+          </div>
+          <div class='h2'> Heading-2
+          </div>
+        </script>
+      </section>
+
     </main>
-   
     <script src="./prism.js"></script>
     <script src="./ratingBar/ratingBar.js"></script>
   </body>

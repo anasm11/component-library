@@ -1,0 +1,12 @@
+@import "../general/fonts-colors.css";
+
+.modal{
+    width:22rem;
+}
+
+.modal>.card>.foot{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    margin-left: auto;
+}
