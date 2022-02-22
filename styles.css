@@ -1,34 +1,60 @@
 @import "./library.css";
 
-@media (min-width: 750px) {
+@media (max-width: 768px) {
   main {
-    max-width: 720px;
+    grid-column:2/4;
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  main {
+    grid-column:2/3;
+    padding-right: 1rem;
   }
 }
 
+
 body {
-  justify-content: center;
-  position: relative;
+  display:grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows:min-content;
+  margin:0;
+  gap:2rem;
 }
 
 header {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  right: 0;
-  left: 0;
+  grid-column:1/4;
+  grid-row:1/2;
+  position:sticky;
+  top:0;
+  z-index:9999;
 }
 
-section {
-  padding-bottom: 4rem;
-}
-
-.examples {
+.sidebar {
+  position:sticky;
+  top:6rem;
+  z-index:9999;
+  grid-column:1/2;
+  width:fit-content;
   display: flex;
+  flex-direction:column;
+  justify-self:center;
+  height:80vh;
+  overflow-y:hidden;
+}
+
+.sidebar > * {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black; 
+}
+
+.sidebar:hover {
+  overflow-y: scroll;
 }
 
 .sidebar {
@@ -51,16 +77,17 @@ section {
   color: black;
 }
 
-.sidebar::-webkit-scrollbar {
-  display: none;
+
+section {
+  padding-top: 3.5rem;
 }
 
-main {
-  padding-left: calc(10rem + 200px);
-  padding-top: 6rem;
-}
-
-footer {
+.examples {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem ;
 }
 
 iframe {
@@ -71,4 +98,20 @@ iframe {
 pre {
   max-height: 300px;
   overflow: hidden;
+}
+
+.card-container{
+  max-width:350px;
+}
+
+.slidecontainer{
+  width:250px;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:visited{
+  text-decoration:none;
 }

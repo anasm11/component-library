@@ -1,9 +1,10 @@
 @import "../general/fonts-colors.css";
 
+/* general card */
 .card img {
   max-inline-size: 100%;
   block-size: auto;
-  border-radius: 1rem 1rem 0rem 0rem;
+  object-fit: cover;
 }
 
 .card {
@@ -13,10 +14,10 @@
   align-items: center;
   flex-wrap: wrap;
   width: fit-content;
-  max-width: 350px;
   height: min-content;
   border-radius: 1rem;
   position: relative;
+  overflow: hidden;
 }
 
 .card:hover {
@@ -36,7 +37,7 @@
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
-.text-container {
+.text-container, .card-header{
   padding: 1rem 1rem 0.2rem 1rem;
   flex: 1 1 auto;
   color: var(--secondary-text-color);
@@ -50,11 +51,11 @@
 
 .author-text {
   font-weight: bold;
-  padding: 0.25rem 0rem 0rem 0rem;
+  padding: 4px 0 0 0;
 }
 
 .description {
-  margin: 0.5rem 0rem 0.5rem 0;
+  margin: 8px 0rem 8px 0;
   padding: 0rem 1rem 0rem 1rem;
   display: flex;
   flex-wrap: wrap;
@@ -69,23 +70,23 @@
   flex: 1 1 auto;
   gap: 0.2rem;
   justify-content: space-around;
-  padding: 0rem 0.75rem 0.5rem 0.75rem;
+  padding: 0rem 0.75rem 0.8rem 0.75rem;
 }
 
 .action-buttons {
   display: flex;
   flex: 1 1 auto;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.2rem;
 }
 
 .action-icons {
   display: flex;
-  flex-wrap: nowrap;
 }
 
 .action-icons > * {
-  padding: 0.75rem;
+  padding: 0.5rem;
   border-radius: 50%;
 }
 
@@ -94,19 +95,16 @@
   cursor: pointer;
 }
 
-.basic-textovermedia > .card-body > .figure {
-  position: relative;
-}
-
-.basic-textovermedia > .card-body > .figure > .text-container {
+/* spl cards */
+.basic-textovermedia > .card-body > .figure-with-text > .text-container {
   z-index: 1;
   bottom: 0;
   position: absolute;
   color: white;
 }
 
-.basic-with-header > .card-body > img {
-  border-radius: 0;
+.figure-with-text{
+  position: relative;
 }
 
 .basic-only-buttons .action-icons {
@@ -117,14 +115,18 @@
   display: none;
 }
 
-.horizontal > .card-body > .img-text > img {
-  width: 100px;
-  height: 90px;
-  flex: 0 1 auto;
-  border-top-right-radius: 0;
+.horizontal > .card-body {
+  display:flex;
+  align-items: flex-start;
 }
 
-.horizontal > .card-body > .img-text {
+.horizontal > .card-body > .img-text > img {
+  width: 7rem;
+  height: 6rem;
+  flex: 0 1 auto;
+}
+
+.img-text {
   display: flex;
 }
 
@@ -132,10 +134,10 @@
   display: none;
 }
 
-.card .badge {
+.card-badge {
   background-color: var(--primary-color);
   position: absolute;
-  font-size: 0.75rem;
+  font-size: 12px;
   display: flex;
   top: 0.5rem;
   left: 0.5rem;
@@ -144,10 +146,6 @@
   border-radius: 0.5rem;
   padding: 0.3rem;
   color: white;
-}
-
-.figure-with-badge {
-  position: relative;
 }
 
 .close-btn {
@@ -169,4 +167,20 @@
 
 .box-with-shadow {
   box-shadow: 1px 1px 1px 1px;
+}
+
+.horizontal-card{
+  display: flex;
+  background-color: var(--secondary-color);
+  border-radius: 1rem;
+}
+
+.horizontal-card>img{
+  padding:1rem;
+  height:7rem;
+  width: 7rem;
+}
+
+.horizontal-card>.foot{
+  display:flex;
 }

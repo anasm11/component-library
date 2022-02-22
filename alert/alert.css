@@ -1,9 +1,4 @@
-:root{
-    --err-bkg-clr:rgb(255, 150, 150);
-    --success-bkg-clr:rgb(150, 255, 150);
-    --info-bkg-clr:rgb(150, 255, 255);
-    --warn-bkg-clr:rgb(255, 255, 150);
-}
+@import '../general/fonts-colors.css';
 
 /* general alert */
 .alert {
@@ -17,7 +12,7 @@
 
 /* special cases of alert */
 .alert-error {
-    background-color: var(--err-bkg-clr);
+    background-color: var(--error-bkg-clr);
 }
 
 .alert-success {

@@ -12,4 +12,9 @@
   flex-wrap: wrap;
   gap: 1rem;
   list-style-type: none;
+  align-items: center;
+}
+
+.nav-links-container>li>.material-icons {
+  font-size:2rem;
 }
