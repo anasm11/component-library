@@ -57,27 +57,6 @@ header {
   overflow-y: scroll;
 }
 
-.sidebar {
-  position: fixed;
-  top: 6rem;
-  margin: 4rem;
-  height: 80vh;
-  overflow-y: scroll;
-  width: 200px;
-}
-
-.sidebar > * {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  flex: 1 1 100%;
-  padding: 1rem 3rem;
-  border-radius: 2rem;
-  text-decoration: none;
-  color: black;
-}
-
-
 section {
   padding-top: 3.5rem;
 }
